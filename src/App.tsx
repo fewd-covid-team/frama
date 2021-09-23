@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './App.css';
+import Header from './header';
 
 // TODO: split to several files
 
@@ -188,14 +189,6 @@ import './App.css';
 //     </div>
 //   );
 // }
-
-function Header(): JSX.Element {
-  return (
-    <header>
-      <title> FEWD project </title>
-    </header>
-  );
-}
 
 function App(): JSX.Element {
   return (

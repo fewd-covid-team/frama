@@ -13,7 +13,7 @@ Feature list can be found [here](https://docs.google.com/document/d/1osCwEQSfgBp
 - [ ] jest?
 - [ ] cehck again with syllabus description
 - [ ] <!--
-                                                                                              This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+                                                                                                              This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

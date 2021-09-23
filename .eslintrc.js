@@ -26,6 +26,6 @@ module.exports = {
   rules: {
     quotes: 'off',
     // "@typescript-eslint/quotes": ["error"],
-    'prettier/prettier': ['error'],
+    // 'prettier/prettier': ['error'],
   },
 };
