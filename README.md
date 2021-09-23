@@ -1,12 +1,19 @@
 # Frama
+
 Frama is a covid anxiety web-site
 
 The concept design can be found [here](https://www.figma.com/file/Pg2XyHoBWbgViIu1g42Tha/Untitled?node-id=0%3A1)
 
 Feature list can be found [here](https://docs.google.com/document/d/1osCwEQSfgBpHZe1qis-X8REKU_lfDe8Z2k-CTOdjOFw/edit?usp=sharing)
 
-<!-- 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TODO:
+
+- [ ] Check with sonarqube
+- [ ] add custom webpack & babel & webpack-devserver
+- [ ] jest?
+- [ ] cehck again with syllabus description
+- [ ] <!--
+                                                                                              This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
