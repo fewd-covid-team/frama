@@ -47,6 +47,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.0",
     "@types/styled-components": "^5.1.14",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
@@ -67,9 +68,8 @@
     "**/*": [
       "prettier --write --ignore-unknown"
     ],
-    "*.ts": [
-      "yarn lint",
-      "yarn typecheck"
+    "*.tsx": [
+      "yarn lint"
     ]
   }
 }
