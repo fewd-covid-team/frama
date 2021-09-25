@@ -10,10 +10,9 @@ Feature list can be found [here](https://docs.google.com/document/d/1osCwEQSfgBp
 
 - [ ] Check with sonarqube
 - [ ] add custom webpack & babel & webpack-devserver
-- [ ] jest?
+- [ ] jest? 1-3 components. setup the configuration and add at least one test
 - [ ] cehck again with syllabus description
-- [ ] <!--
-                                                                                                                                                                  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [ ] Add stsyles with https://ant.design
 
 ## Available Scripts
 
