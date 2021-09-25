@@ -4,6 +4,7 @@ import Header from './header';
 import TraitorsScreen from './traitors';
 import TipsScreen from './tips';
 import StatsScreen from './stats';
+import Footer from './footer';
 
 function AppContent(): JSX.Element {
   return (
@@ -25,6 +26,8 @@ function AppContent(): JSX.Element {
             <TraitorsScreen />
           </Route>
         </Switch>
+
+        <Footer />
       </div>
     </Router>
   );

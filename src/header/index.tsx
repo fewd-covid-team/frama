@@ -9,16 +9,13 @@ function Header(): JSX.Element {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
             <Link to="/traitors">Traitors</Link>
           </li>
           <li>
-            <Link to="/stat">Statistics</Link>
+            <Link to="/stats">Statistics</Link>
           </li>
           <li>
-            <Link to="/tips">tips</Link>
+            <Link to="/tips">Tips</Link>
           </li>
         </ul>
       </nav>

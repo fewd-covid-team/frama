@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 // TODO: make good
-const HeaderWrapper = styled.header`
+const TraitorScreenWrapper = styled.div`
   font-size: 1.5em;
 `;
 
-export default HeaderWrapper;
+export default TraitorScreenWrapper;

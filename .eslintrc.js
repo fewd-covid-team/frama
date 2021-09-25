@@ -27,5 +27,6 @@ module.exports = {
     quotes: 'off',
     // "@typescript-eslint/quotes": ["error"],
     // 'prettier/prettier': ['error'],
+    'react/jsx-props-no-spreading': 'off',
   },
 };
