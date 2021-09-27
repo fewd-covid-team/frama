@@ -2,17 +2,14 @@ import * as React from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
-import {
-  CountryAPIDataType, getCountryData,
-} from '../../servers/covid';
+import { useSelector } from 'react-redux';
+import { CountryAPIDataType, getCountryData } from '../../servers/covid';
 import { TableDataType, transformFromApiToTableFormat } from './utils';
 import CountryPicker from './picker';
 
 interface TableProps {
-  info: { date: string, cases: number, deaths: number }[]
+  info: { day: string; cases: number; deaths: number }[];
 }
-
-// type TableProps = any;
 
 function Table({ info }: TableProps): JSX.Element {
   return (
@@ -40,30 +37,33 @@ function Table({ info }: TableProps): JSX.Element {
   );
 }
 
-// function CountryDataTable({ country }: { country: string }): JSX.Element {
-//   const [info, setInfo]: [TableDataType, any] = React.useState([
-//     {
-//       day: '25/09/2021',
-//       cases: 10,
-//       deaths: 10,
-//       recovered: 10,
-//     },
-//   ]);
+// TODO: find out if numbers are correct
+function CountryDataTable(): JSX.Element {
+  const [info, setInfo]: [TableDataType, any] = React.useState([
+    {
+      day: '25/09/2021',
+      cases: 10,
+      deaths: 10,
+      recovered: 10,
+    },
+  ]);
 
-//   React.useEffect(() => {
-//     getCountryData(country).then((val: CountryAPIDataType) => {
-//       setInfo(transformFromApiToTableFormat(val));
-//     });
-//   }, [country]);
+  const currentCountry = useSelector((state: any) => state.country.currentCountry);
+  React.useEffect(() => {
+    getCountryData(currentCountry).then((val: CountryAPIDataType) => {
+      setInfo(transformFromApiToTableFormat(val));
+    });
+  }, [currentCountry]);
 
-//   return <Table info={info} />;
-// }
+  return <Table info={info} />;
+}
 
 function StatsScreen(): JSX.Element {
   return (
     <div>
       <h3> Stats screen </h3>
       <CountryPicker />
+      <CountryDataTable />
     </div>
   );
 }
