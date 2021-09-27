@@ -4,7 +4,7 @@ import {
 } from 'recharts';
 import {
   CountryAPIDataType, getCountryData,
-} from '../servers/covid';
+} from '../../servers/covid';
 import { TableDataType, transformFromApiToTableFormat } from './utils';
 import CountryPicker from './picker';
 
@@ -34,6 +34,7 @@ function Table({ info }: TableProps): JSX.Element {
       <Legend />
       <Line type="monotone" dataKey="cases" stroke="#8884d8" activeDot={{ r: 8 }} />
       <Line type="monotone" dataKey="deaths" stroke="#82ca9d" />
+      {/* TODO: uncomment for an additional graph */}
       {/* <Line type="monotone" dataKey="recovered" stroke="#ac84d8" /> */}
     </LineChart>
   );

@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Header from './header';
-import TraitorsScreen from './traitors';
-import TipsScreen from './tips';
-import StatsScreen from './stats';
-import Footer from './footer';
+import Header from './components/header';
+import TraitorsScreen from './pages/traitors';
+import TipsScreen from './pages/tips';
+import StatsScreen from './pages/stats';
+import Footer from './components/footer';
 
 function AppContent(): JSX.Element {
   return (

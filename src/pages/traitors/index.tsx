@@ -71,9 +71,21 @@ function TraitorsTable(): JSX.Element {
       <tbody>
         {data.map(({ id, name, surname }) => (
           <tr key={`data-tr-${id}`}>
-            <td> {id} </td>
-            <td> {name} </td>
-            <td> {surname} </td>
+            <td>
+              {' '}
+              {id}
+              {' '}
+            </td>
+            <td>
+              {' '}
+              {name}
+              {' '}
+            </td>
+            <td>
+              {' '}
+              {surname}
+              {' '}
+            </td>
           </tr>
         ))}
       </tbody>
@@ -81,7 +93,7 @@ function TraitorsTable(): JSX.Element {
   );
 }
 
-// TODO: add form
+// TODO: add form for new traitor
 function TraitorsScreen(): JSX.Element {
   return (
     <TraitorScreenWrapper>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { pickUA, pickUSA, pickRU } from '../store';
+import { pickUA, pickUSA, pickRU } from '../../store';
 
 // TODO: doesn't work
 function CountryPicker(): JSX.Element {

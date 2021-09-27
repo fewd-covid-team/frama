@@ -1,4 +1,4 @@
-import { CountryAPIDataType } from '../servers/covid';
+import { CountryAPIDataType } from '../../servers/covid';
 
 type TableDataType = {
   day: string;
