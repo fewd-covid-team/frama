@@ -4,7 +4,7 @@ import FooterWrapper from './index.styles';
 function FooterContent() {
   return (
     <div>
-      <span> Done by Egor Osokin and Danil Usmanov</span>
+      <span> Done by Egor Osokin & Danil Usmanov</span>
     </div>
   );
 }

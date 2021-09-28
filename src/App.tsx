@@ -6,13 +6,13 @@ import TraitorsScreen from './pages/traitors';
 import TipsScreen from './pages/tips';
 import StatsScreen from './pages/stats';
 import Footer from './components/footer';
+import { Body } from './App.styles';
 
 function AppContent(): JSX.Element {
   return (
     <Router>
-      <div>
+      <Body>
         <Header />
-
         <Switch>
           <Route path="/traitors">
             <TraitorsScreen />
@@ -27,9 +27,8 @@ function AppContent(): JSX.Element {
             <TraitorsScreen />
           </Route>
         </Switch>
-
         <Footer />
-      </div>
+      </Body>
     </Router>
   );
 }

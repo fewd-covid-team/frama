@@ -1,24 +1,20 @@
-import styled, { css } from 'styled-components';
-
-// https://codesandbox.io/s/footer-with-styled-components-3618y?file=/src/index.js:111-223
-const media = {
-  desktop: (...args: [any]) => css`
-    @media (min-width: 870px) {
-      ${css(...args)};
-    }
-  `,
-};
+import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  font-family: nunito-sans, sans-serif;
-  text-align: center;
-  ${media.desktop`
-    text-align: left;
-  `}
-  background-color: green;
   position: absolute;
+  margin-bottom: 0.5%;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  
+  font-family: Inter, sans-serif;
+  text-align: center;
   bottom: 0;
   min-width: 100%;
+
 `;
 
 export default FooterWrapper;
