@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { CountryAPIDataType, getCountryData } from '../../servers/covid';
 import { TableDataType, transformFromApiToTableFormat } from './utils';
 import CountryPicker from './picker';
+import { ChartWrapper, DiagramWrapper } from './index.styles';
 
 interface TableProps {
   info: { day: string; cases: number; deaths: number }[];
@@ -13,27 +14,33 @@ interface TableProps {
 
 function Table({ info }: TableProps): JSX.Element {
   return (
-    <LineChart
-      width={500}
-      height={300}
-      data={info}
-      margin={{
-        top: 5,
-        right: 30,
-        left: 20,
-        bottom: 5,
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="day" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Line type="monotone" dataKey="cases" stroke="#8884d8" activeDot={{ r: 8 }} />
-      <Line type="monotone" dataKey="deaths" stroke="#82ca9d" />
-      {/* TODO: uncomment for an additional graph */}
-      {/* <Line type="monotone" dataKey="recovered" stroke="#ac84d8" /> */}
-    </LineChart>
+    <div>
+      <ChartWrapper>
+        <LineChart
+          width={500}
+          height={300}
+          data={info}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray='3 3' />
+          <XAxis dataKey='day' />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type='monotone' dataKey='cases' stroke='#8884d8' activeDot={{ r: 8 }} />
+          <Line type='monotone' dataKey='deaths' stroke='#82ca9d' />
+          {/* TODO: uncomment for an additional graph */}
+          {/* <Line type="monotone" dataKey="recovered" stroke="#ac84d8" /> */}
+        </LineChart>
+      </ChartWrapper>
+      <DiagramWrapper></DiagramWrapper>
+    </div>
+
   );
 }
 
@@ -61,7 +68,6 @@ function CountryDataTable(): JSX.Element {
 function StatsScreen(): JSX.Element {
   return (
     <div>
-      <h3> Stats screen </h3>
       <CountryPicker />
       <CountryDataTable />
     </div>
