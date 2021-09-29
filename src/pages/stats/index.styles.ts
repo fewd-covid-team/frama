@@ -60,6 +60,24 @@ export const Button = styled.button`
   }
 `;
 
+export const PickedButton = styled.button`
+  //flex-direction: column;
+  //text-align: center;
+  //position: absolute;
+  //
+  color: white;
+  font-family: Inter,serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.084px;
+  background: #333333;
+  border-radius: 100px;
+`;
+
 export const ChartWrapper = styled.div`
   display: flex;
   flex-direction: column;

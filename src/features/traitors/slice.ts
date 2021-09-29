@@ -33,8 +33,7 @@ export const countrySlice = createSlice({
     ],
   },
   reducers: {
-    addTraitor: (state, action) => {
-      console.log('state and action is ', state, action);
+    addTraitor: (state, action: any) => {
       state.traitors = [];
     },
   },
