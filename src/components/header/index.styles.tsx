@@ -48,9 +48,9 @@ export const Logo = styled.a`
   width: 202px;
   height: 31px;
   left: 20px;
-  top: 0px;
+  top: 0;
 
-  font-family: Inter;
+  font-family: Inter, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -65,7 +65,7 @@ export const Logo = styled.a`
   order: 1;
   flex-grow: 0;
   margin: 0px 2px;
-  
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -74,6 +74,7 @@ export const Logo = styled.a`
 
   align-content: center;
   text-decoration: none;
+
   &:hover {
     color: green;
     transition: 200ms ease-in;
@@ -87,7 +88,7 @@ export const StyledLink = styled(Link)`
   left: 72.5px;
   top: 20px;
 
-  font-family: Inter;
+  font-family: Inter,serif;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;

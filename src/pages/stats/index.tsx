@@ -1,21 +1,24 @@
 import * as React from 'react';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie,
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell,
 } from 'recharts';
 import { useSelector } from 'react-redux';
 import { CountryAPIDataType, getCountryData } from '../../servers/covid';
 import { TableDataType, transformFromApiToTableFormat } from './utils';
 import CountryPicker from './picker';
-import { ChartWrapper, DiagramWrapper } from './index.styles';
+import { ChartWrapper, DiagramWrapper, Label } from './index.styles';
 
 interface TableProps {
   info: { day: string; cases: number; deaths: number }[];
 }
 
+const COLORS = ['#0088FE', '#00C49F', '#FF8042'];
+
 function Table({ info }: TableProps): JSX.Element {
   return (
     <div>
       <ChartWrapper>
+        <Label>Period data</Label>
         <ResponsiveContainer>
           <LineChart
             data={info}
@@ -72,19 +75,25 @@ function CovidPieChart({ data }: { data: TableDataType }): JSX.Element {
     { name: 'deaths', value: deaths },
   ];
   return (
-    <PieChart width={400} height={400}>
-      <Pie
-        dataKey="value"
-        isAnimationActive={false}
-        data={newData}
-        cx="50%"
-        cy="50%"
-        outerRadius={80}
-        fill="#8884d8"
-        label
-      />
-      <Tooltip />
-    </PieChart>
+    <ResponsiveContainer>
+      <PieChart>
+        <Pie
+          dataKey="value"
+          isAnimationActive={false}
+          data={newData}
+          cx="50%"
+          cy="50%"
+          outerRadius={110}
+          fill="#8884d8"
+          labelLine={false}
+        >
+          {
+          newData.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)
+        }
+        </Pie>
+        <Legend />
+      </PieChart>
+    </ResponsiveContainer>
   );
 }
 
@@ -107,6 +116,7 @@ function CountryDataPieChart(): JSX.Element {
   }, [currentCountry]);
   return (
     <DiagramWrapper>
+      <Label>Today</Label>
       <CovidPieChart data={info} />
     </DiagramWrapper>
   );

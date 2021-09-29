@@ -115,3 +115,19 @@ export const DiagramWrapper = styled.div`
   box-sizing: border-box;
   border-radius: 16px;
 `;
+
+export const Label = styled.p`
+  display: flex;
+  justify-content: center;
+  position: static;
+  margin: auto auto 0;
+
+  align-content: center;
+  color: white;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 44px;
+  text-transform: capitalize;
+`;
