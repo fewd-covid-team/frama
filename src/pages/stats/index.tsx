@@ -12,7 +12,7 @@ interface TableProps {
   info: { day: string; cases: number; deaths: number }[];
 }
 
-const COLORS = ['#0088FE', '#00C49F', '#FF8042'];
+const COLORS = ['#0088FE', '#FF8042'];
 
 function Table({ info }: TableProps): JSX.Element {
   return (
@@ -66,12 +66,11 @@ function CountryDataTable(): JSX.Element {
 
 function CovidPieChart({ data }: { data: TableDataType }): JSX.Element {
   const lastDay = data.pop() || {
-    day: '11-11-11', cases: 1, recovered: 2, deaths: 3,
+    day: '11-11-11', cases: 0, deaths: 0,
   };
-  const { cases, recovered, deaths } = lastDay;
+  const { cases, deaths } = lastDay;
   const newData = [
     { name: 'cases', value: cases },
-    { name: 'recovered', value: recovered },
     { name: 'deaths', value: deaths },
   ];
   return (

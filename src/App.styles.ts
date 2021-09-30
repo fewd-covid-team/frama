@@ -61,7 +61,7 @@ export const Body4 = styled.div`
 export const Body = styled.div`
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: #131126;

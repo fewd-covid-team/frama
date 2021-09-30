@@ -81,9 +81,12 @@ const SuggestionText = styled.p`
 const Logo = styled.img`
   width: 50px;
   height: 50px;
-  margin-left: 60%;
+  margin-left: 50%;
   margin-right: 0;
-  top: 0;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: right;
 `;
 
@@ -96,17 +99,21 @@ const Grid = styled.div`
   left: 50%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(2, 3fr);
-  grid-template-rows: 33% 33%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30% 20%;
   grid-gap: 30px;
 `;
 
 const Image = styled.img`
+  object-fit: cover;
+  width: 100%;
+  max-height: 200px;
+  size: 30px;
   align-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  //margin: auto;'
 `;
 
 Image.defaultProps = {
@@ -118,8 +125,7 @@ const Text = styled.p`
   text-align: left;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 10px;
+  justify-content: flex-start;
   color: white;
   font-style: normal;
   font-family: Inter, serif;

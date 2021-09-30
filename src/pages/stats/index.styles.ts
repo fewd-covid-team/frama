@@ -18,7 +18,7 @@ export const RoundedWrapper = styled.div`
   left: 0;
   top: 42.27px;
 
-  background: rgba(255, 242, 242, 0.3);
+  background: rgba(255, 238, 238, 0.4);
   border: 2px solid rgba(51, 51, 51, 0.5);
   border-radius: 34px;
 

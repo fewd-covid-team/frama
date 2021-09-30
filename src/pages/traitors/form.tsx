@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import * as React from 'react';
 import {
-  Formik, Field, Form, ErrorMessage,
+  Formik, Form, ErrorMessage,
 } from 'formik';
 import { useDispatch } from 'react-redux';
 import { addTraitor } from '../../store';
+import { Button, Container, Field } from './index.styles';
 
 function TraitorsForm(): JSX.Element {
   const dispatch = useDispatch();
@@ -22,8 +23,8 @@ function TraitorsForm(): JSX.Element {
   const form = (
     <Formik
       initialValues={{
-        name: 'me',
-        lastName: '123',
+        name: '',
+        lastName: '',
       }}
       onSubmit={(values) => {
         alert(JSON.stringify(values, null, 2));
@@ -41,27 +42,31 @@ function TraitorsForm(): JSX.Element {
       }}
     >
       <Form>
-        <label htmlFor="name">First Name</label>
-        <Field id="name" name="name" placeholder="Jane" />
-        <ErrorMessage name="name">
-          {(msg) => <div style={{ color: 'red' }}>{msg}</div>}
-        </ErrorMessage>
-
-        <label htmlFor="lastName">Last name</label>
-        <Field id="lastName" name="lastName" />
-        <ErrorMessage name="lastName">
-          {(msg) => <div style={{ color: 'red' }}>{msg}</div>}
-        </ErrorMessage>
-
-        <button type="submit">Submit</button>
+        <div>
+          <Field id="name" name="name" placeholder="First Name" />
+          <Field id="lastName" name="lastName" placeholder="Last Name" />
+        </div>
+        <Container>
+          <ErrorMessage name="name">
+            {(msg) => <div style={{ color: 'red' }}>{msg}</div>}
+          </ErrorMessage>
+        </Container>
+        <Container>
+          <ErrorMessage name="lastName">
+            {(msg) => <div style={{ color: 'red' }}>{msg}</div>}
+          </ErrorMessage>
+        </Container>
+        <Container>
+          <Button type="submit">Submit</Button>
+        </Container>
       </Form>
     </Formik>
   );
 
   return (
-    <div>
+    <Container>
       {form}
-    </div>
+    </Container>
   );
 }
 

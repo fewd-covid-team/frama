@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 import TraitorsForm from './form';
-import TraitorScreenWrapper from './index.styles';
+import { TraitorScreenWrapper, Title as TitleStyle, Table, Th, Td } from './index.styles';
 
 function Title(): JSX.Element {
   return (
     <div>
-      <h3>Betray your friend!</h3>
+      <TitleStyle>Betray your friend!</TitleStyle>
     </div>
   );
 }
@@ -33,36 +33,30 @@ function TraitorsTable(): JSX.Element {
   );
 
   return (
-    <table style={{ border: 'solid 1px blue' }}>
+    <Table>
       <thead>
         <tr key="header=tr">
           {columns.map(({ name }) => (
-            <th key={`header-th-${name}`}>{name}</th>
+            <Th key={`header-th-${name}`}>{name}</Th>
           ))}
         </tr>
       </thead>
       <tbody>
         {data.map(({ id, name, lastName }) => (
           <tr key={`data-tr-${id}`}>
-            <td>
-              {' '}
+            <Td>
               {id}
-              {' '}
-            </td>
-            <td>
-              {' '}
+            </Td>
+            <Td>
               {name}
-              {' '}
-            </td>
-            <td>
-              {' '}
+            </Td>
+            <Td>
               {lastName}
-              {' '}
-            </td>
+            </Td>
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 }
 
