@@ -23,7 +23,7 @@ const Comment = styled.div<{ left: string, top: string, background: string }>`
   border-radius: 18px;
   `;
 
-const Name = styled.div`
+const Text = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -81,13 +81,14 @@ const SuggestionText = styled.p`
 const Logo = styled.img`
   width: 50px;
   height: 50px;
-  margin-left: 50%;
+  margin-top: 10px;
+  margin-left: 220px;
   margin-right: 0;
-  align-content: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  float: right;
+  //align-content: center;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //float: right;
 `;
 
 const Grid = styled.div`
@@ -120,7 +121,7 @@ Image.defaultProps = {
   src: '.',
 };
 
-const Text = styled.p`
+const BigText = styled.p`
   align-content: center;
   text-align: left;
   display: flex;
@@ -135,7 +136,7 @@ const Text = styled.p`
 `;
 
 const S = {
-  Comment, Logo, SuggestionText, NameText, Name, Comments, Grid, Image, Text,
+  Comment, Logo, SuggestionText, NameText, Text, Comments, Grid, Image, BigText,
 };
 
 export default S;

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell,
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  ResponsiveContainer, PieChart, Pie, Cell,
 } from 'recharts';
 import { useSelector } from 'react-redux';
 import { CountryAPIDataType, getCountryData } from '../../servers/covid';

@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 import TraitorsForm from './form';
-import { TraitorScreenWrapper, Title as TitleStyle, Table, Th, Td } from './index.styles';
+import {
+  TraitorScreenWrapper, Title as TitleStyle, Table, Th, Td,
+} from './index.styles';
 
 function Title(): JSX.Element {
   return (

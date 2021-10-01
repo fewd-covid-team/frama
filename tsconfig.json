@@ -20,5 +20,5 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src", ".eslintrc.js"]
+  "include": ["src", ".eslintrc.js", "src/index.d.ts"]
 }

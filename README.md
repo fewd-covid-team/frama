@@ -9,10 +9,10 @@ Feature list can be found [here](https://docs.google.com/document/d/1osCwEQSfgBp
 # TODO:
 
 - [ ] Check with sonarqube
-- [ ] add custom webpack & babel & webpack-devserver
+- [x] add custom webpack & babel & webpack-devserver
 - [ ] jest? 1-3 components. setup the configuration and add at least one test
-- [ ] cehck again with syllabus description
-- [ ] Add stsyles with https://ant.design
+- [ ] check again with syllabus description
+- [x] Add styles
 - [ ] Submit traitor form doesn't work
 
 ## Available Scripts
