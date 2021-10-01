@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { Container, HeaderWrapper, Logo, Row, Column, StyledLink } from './index.styles';
+import {
+  Container, HeaderWrapper, Logo, Row, Column, StyledLink,
+} from './index.styles';
 
 function Header(): JSX.Element {
   const content = (
