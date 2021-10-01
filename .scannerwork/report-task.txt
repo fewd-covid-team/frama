@@ -1,0 +1,6 @@
+projectKey=frama
+serverUrl=http://localhost:9000
+serverVersion=7.5.0.20543
+dashboardUrl=http://localhost:9000/dashboard?id=frama
+ceTaskId=AXw9UuHnqJFjFvOGCI0J
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXw9UuHnqJFjFvOGCI0J

@@ -53,6 +53,11 @@ function Table({ info }: TableProps): JSX.Element {
   );
 }
 
+function fetchCountryData(country: string, callback: Function) {
+  getCountryData(country).then((val: CountryAPIDataType) => {
+    callback(transformFromApiToTableFormat(val));
+  });
+}
 function CountryDataTable(): JSX.Element {
   const [info, setInfo]: [TableDataType, any] = React.useState([
     {
@@ -65,9 +70,7 @@ function CountryDataTable(): JSX.Element {
 
   const currentCountry = useSelector((state: any) => state.country.currentCountry);
   React.useEffect(() => {
-    getCountryData(currentCountry).then((val: CountryAPIDataType) => {
-      setInfo(transformFromApiToTableFormat(val));
-    });
+    fetchCountryData(currentCountry, setInfo);
   }, [currentCountry]);
 
   return <Table info={info} />;
@@ -121,9 +124,7 @@ function CountryDataPieChart(): JSX.Element {
 
   const currentCountry = useSelector((state: any) => state.country.currentCountry);
   React.useEffect(() => {
-    getCountryData(currentCountry).then((val: CountryAPIDataType) => {
-      setInfo(transformFromApiToTableFormat(val));
-    });
+    fetchCountryData(currentCountry, setInfo);
   }, [currentCountry]);
   return (
     <DiagramWrapper>
