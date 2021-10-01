@@ -1,7 +1,16 @@
 import * as React from 'react';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-  ResponsiveContainer, PieChart, Pie, Cell,
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  PieChart,
+  Pie,
+  Cell,
 } from 'recharts';
 import { useSelector } from 'react-redux';
 import { CountryAPIDataType, getCountryData } from '../../servers/covid';
@@ -41,7 +50,6 @@ function Table({ info }: TableProps): JSX.Element {
         </ResponsiveContainer>
       </ChartWrapper>
     </div>
-
   );
 }
 
@@ -67,7 +75,9 @@ function CountryDataTable(): JSX.Element {
 
 function CovidPieChart({ data }: { data: TableDataType }): JSX.Element {
   const lastDay = data.pop() || {
-    day: '11-11-11', cases: 0, deaths: 0,
+    day: '11-11-11',
+    cases: 0,
+    deaths: 0,
   };
   const { cases, deaths } = lastDay;
   const newData = [
@@ -86,10 +96,11 @@ function CovidPieChart({ data }: { data: TableDataType }): JSX.Element {
           outerRadius={110}
           fill="#8884d8"
           labelLine={false}
+          key="val-#1"
         >
-          {
-          newData.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} />)
-        }
+          {newData.map((entry, index) => (
+            <Cell fill={COLORS[index % COLORS.length]} />
+          ))}
         </Pie>
         <Legend />
       </PieChart>
@@ -98,7 +109,7 @@ function CovidPieChart({ data }: { data: TableDataType }): JSX.Element {
 }
 
 function CountryDataPieChart(): JSX.Element {
-// TODO: shit, refactor to the global state
+  // TODO: shit, refactor to the global state
   const [info, setInfo]: [TableDataType, any] = React.useState([
     {
       day: '25/09/2021',
