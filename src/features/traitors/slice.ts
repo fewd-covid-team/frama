@@ -10,31 +10,32 @@ export const countrySlice = createSlice({
         name: 'Vladimir',
         lastName: 'Putin',
       },
-      {
-        id: '2',
-        name: 'Barak',
-        lastName: 'Obama',
-      },
-      {
-        id: '3',
-        name: 'Vladimir',
-        lastName: 'Putin',
-      },
-      {
-        id: '4',
-        name: 'Danil',
-        lastName: 'Usmanov',
-      },
-      {
-        id: '5',
-        name: 'Egor',
-        lastName: 'Osokin',
-      },
+      // {
+      //   id: '2',
+      //   name: 'Barak',
+      //   lastName: 'Obama',
+      // },
+      // {
+      //   id: '3',
+      //   name: 'Vladimir',
+      //   lastName: 'Putin',
+      // },
+      // {
+      //   id: '4',
+      //   name: 'Danil',
+      //   lastName: 'Usmanov',
+      // },
+      // {
+      //   id: '5',
+      //   name: 'Egor',
+      //   lastName: 'Osokin',
+      // },
     ],
   },
   reducers: {
     addTraitor: (state, action: any) => {
-      state.traitors = [];
+      const { payload } = action;
+      state.traitors = [...state.traitors, payload];
     },
   },
 });

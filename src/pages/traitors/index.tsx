@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 import TraitorsForm from './form';
-import { TraitorScreenWrapper, Title as TitleStyle, Table, Th, Td } from './index.styles';
+import {
+  TraitorScreenWrapper, Title as TitleStyle, Table, Th, Td,
+} from './index.styles';
 
 function Title(): JSX.Element {
   return (
@@ -12,7 +14,9 @@ function Title(): JSX.Element {
 }
 
 function TraitorsTable(): JSX.Element {
-  const data: { id: string | number, name: string, lastName: string }[] = useSelector((state: any) => state.traitors.traitors);
+  const data: { id: string | number; name: string; lastName: string }[] = useSelector(
+    (state: any) => state.traitors.traitors,
+  );
   const columns = React.useMemo(
     () => [
       {
@@ -43,16 +47,10 @@ function TraitorsTable(): JSX.Element {
       </thead>
       <tbody>
         {data.map(({ id, name, lastName }) => (
-          <tr key={`data-tr-${id}`}>
-            <Td>
-              {id}
-            </Td>
-            <Td>
-              {name}
-            </Td>
-            <Td>
-              {lastName}
-            </Td>
+          <tr key={`data-tr-${id}-${name}`}>
+            <Td>{id}</Td>
+            <Td>{name}</Td>
+            <Td>{lastName}</Td>
           </tr>
         ))}
       </tbody>
