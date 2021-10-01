@@ -81,11 +81,12 @@
     "prettier": "^2.4.1",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^3.3.0",
-    "ts-node": "^10.2.1",
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.0",
-    "redux-devtools-extension": "^2.13.9"
+    "react-test-renderer": "^17.0.2",
+    "redux-devtools-extension": "^2.13.9",
+    "ts-node": "^10.2.1"
   },
   "lint-staged": {
     "**/*": [

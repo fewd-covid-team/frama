@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TipsScreen snapshot 1`] = `
+<div>
+  <div
+    className="sc-bdfBQB dYpdhA"
+  >
+    <div
+      className="sc-gsTEea cUaASH"
+    >
+      <div
+        className="sc-dlfnuX goJruT"
+      >
+        <p
+          className="sc-hKgJUU delvUl"
+        >
+          Danil Usmanov
+        </p>
+        <p
+          className="sc-eCstlR byKmXQ"
+        >
+          Wash hands!
+        </p>
+        <img
+          className="sc-jSgvzq jiIkwK"
+          src="static/emoji1.png"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-gsTEea kzUBZA"
+    >
+      <div
+        className="sc-dlfnuX goJruT"
+      >
+        <p
+          className="sc-hKgJUU delvUl"
+        >
+          Danil Usmanov
+        </p>
+        <p
+          className="sc-eCstlR byKmXQ"
+        >
+          Wash hands!
+        </p>
+        <img
+          className="sc-jSgvzq jiIkwK"
+          src="static/emoji2.png"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-gsTEea iioA-Do"
+    >
+      <div
+        className="sc-dlfnuX goJruT"
+      >
+        <p
+          className="sc-hKgJUU delvUl"
+        >
+          Danil Usmanov
+        </p>
+        <p
+          className="sc-eCstlR byKmXQ"
+        >
+          Wash hands!
+        </p>
+        <img
+          className="sc-jSgvzq jiIkwK"
+          src="static/emoji3.png"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-gsTEea iwElOC"
+    >
+      <div
+        className="sc-dlfnuX goJruT"
+      >
+        <p
+          className="sc-hKgJUU delvUl"
+        >
+          Danil Usmanov
+        </p>
+        <p
+          className="sc-eCstlR byKmXQ"
+        >
+          Wash hands!
+        </p>
+        <img
+          className="sc-jSgvzq jiIkwK"
+          src="static/emoji4.png"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-gsTEea cIbXpN"
+    >
+      <div
+        className="sc-dlfnuX goJruT"
+      >
+        <p
+          className="sc-hKgJUU delvUl"
+        >
+          Danil Usmanov
+        </p>
+        <p
+          className="sc-eCstlR byKmXQ"
+        >
+          Wash hands!
+        </p>
+        <img
+          className="sc-jSgvzq jiIkwK"
+          src="static/emoji5.png"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gKseQn idgQLy"
+  >
+    <img
+      className="sc-iBPTik fxpbwG"
+      src="static/home.png"
+    />
+    <p
+      className="sc-fubCzh eRaIch"
+    >
+      Stay Home
+    </p>
+    <p
+      className="sc-fubCzh eRaIch"
+    >
+      Keep Social Distance
+    </p>
+    <img
+      className="sc-iBPTik fxpbwG"
+      src="static/distance.png"
+    />
+    <img
+      className="sc-iBPTik fxpbwG"
+      src="static/hands.png"
+    />
+    <p
+      className="sc-fubCzh eRaIch"
+    >
+      Wash Hands
+    </p>
+  </div>
+</div>
+`;

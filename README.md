@@ -13,7 +13,7 @@ Feature list can be found [here](https://docs.google.com/document/d/1osCwEQSfgBp
 - [ ] jest? 1-3 components. setup the configuration and add at least one test
 - [ ] check again with syllabus description
 - [x] Add styles
-- [ ] Submit traitor form doesn't work
+- [x] Submit traitor form doesn't work
 
 ## Available Scripts
 

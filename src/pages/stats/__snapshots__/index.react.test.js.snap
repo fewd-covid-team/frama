@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatsScreen snapshot 1`] = `
+<div>
+  <div
+    className="sc-bdfBQB fuBMcz"
+  >
+    <div
+      className="sc-gsTEea gEoiSC"
+    >
+      <button
+        aria-label="Pick UA"
+        className="sc-dlfnuX dQSMFK"
+        onClick={[Function]}
+        type="button"
+      >
+        Ukraine 🇺🇦
+      </button>
+       
+      <button
+        aria-label="Pick USA"
+        className="sc-dlfnuX dQSMFK"
+        onClick={[Function]}
+        type="button"
+      >
+        USA 🇺🇸
+      </button>
+       
+      <button
+        aria-label="Pick RU"
+        className="sc-hKgJUU jUVlOu"
+        onClick={[Function]}
+        type="button"
+      >
+        Russia 🇷🇺
+      </button>
+    </div>
+  </div>
+  <div>
+    <div
+      className="sc-eCstlR fFuuXC"
+    >
+      <p
+        className="sc-gKseQn byKqSI"
+      >
+        Period data
+      </p>
+      <div
+        className="recharts-responsive-container"
+        style={
+          Object {
+            "height": "100%",
+            "maxHeight": undefined,
+            "minHeight": undefined,
+            "minWidth": undefined,
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="sc-jSgvzq khJvwa"
+  >
+    <p
+      className="sc-gKseQn byKqSI"
+    >
+      Today
+    </p>
+    <div
+      className="recharts-responsive-container"
+      style={
+        Object {
+          "height": "100%",
+          "maxHeight": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;

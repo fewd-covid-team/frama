@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TraitorsScreen snapshot 1`] = `
+<div
+  className="sc-bdfBQB ZMMEF"
+>
+  <div>
+    <p
+      className="sc-gsTEea fveWXe"
+    >
+      Betray your friend!
+    </p>
+  </div>
+  <table
+    className="sc-dlfnuX gWLTil"
+  >
+    <thead>
+      <tr>
+        <th
+          className="sc-eCstlR cALRct"
+        >
+          ID
+        </th>
+        <th
+          className="sc-eCstlR cALRct"
+        >
+          Name
+        </th>
+        <th
+          className="sc-eCstlR cALRct"
+        >
+          Last name
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th
+          className="sc-jSgvzq gZqCPI"
+        >
+          1
+        </th>
+        <th
+          className="sc-jSgvzq gZqCPI"
+        >
+          Vladimir
+        </th>
+        <th
+          className="sc-jSgvzq gZqCPI"
+        >
+          Putin
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    className="sc-gKseQn eBUiiy"
+  >
+    <form
+      action="#"
+      onReset={[Function]}
+      onSubmit={[Function]}
+    >
+      <div>
+        <input
+          className="sc-iBPTik jxFLwP"
+          id="name"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="First Name"
+          value="me"
+        />
+        <input
+          className="sc-iBPTik jxFLwP"
+          id="lastName"
+          name="lastName"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Last Name"
+          value="123"
+        />
+      </div>
+      <div
+        className="sc-gKseQn eBUiiy"
+      />
+      <div
+        className="sc-gKseQn eBUiiy"
+      />
+      <div
+        className="sc-gKseQn eBUiiy"
+      >
+        <button
+          className="sc-fubCzh kHaUnY"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

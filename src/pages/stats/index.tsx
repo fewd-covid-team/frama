@@ -79,7 +79,7 @@ function CovidPieChart({ data }: { data: TableDataType }): JSX.Element {
     cases: 0,
     deaths: 0,
   };
-  const { cases, deaths } = lastDay;
+  const { cases, deaths, day } = lastDay;
   const newData = [
     { name: 'cases', value: cases },
     { name: 'deaths', value: deaths },
@@ -96,10 +96,10 @@ function CovidPieChart({ data }: { data: TableDataType }): JSX.Element {
           outerRadius={110}
           fill="#8884d8"
           labelLine={false}
-          key="val-#1"
+          key={`val-${day}`}
         >
           {newData.map((entry, index) => (
-            <Cell fill={COLORS[index % COLORS.length]} />
+            <Cell fill={COLORS[index % COLORS.length]} key={`val-${day}-${entry}`} />
           ))}
         </Pie>
         <Legend />
