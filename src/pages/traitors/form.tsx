@@ -32,8 +32,8 @@ function TraitorsForm(): JSX.Element {
   const form = (
     <Formik
       initialValues={{
-        name: 'me',
-        lastName: '123',
+        name: '',
+        lastName: '',
       }}
       onSubmit={(values) => {
         const { name, lastName } = values;

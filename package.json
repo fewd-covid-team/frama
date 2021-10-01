@@ -84,8 +84,8 @@
     "ts-node": "^10.2.1",
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.0"
-    "redux-devtools-extension": "^2.13.9",
+    "webpack-dev-server": "^4.3.0",
+    "redux-devtools-extension": "^2.13.9"
   },
   "lint-staged": {
     "**/*": [

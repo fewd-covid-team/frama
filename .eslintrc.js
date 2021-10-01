@@ -29,4 +29,5 @@ module.exports = {
     // 'prettier/prettier': ['error'],
     'react/jsx-props-no-spreading': 'off',
   },
+  ignorePatterns: ['**/*.bundle.js', 'webpack.config.js'],
 };
