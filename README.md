@@ -11,7 +11,7 @@ Feature list can be found [here](https://docs.google.com/document/d/1osCwEQSfgBp
 - [x] Check with sonarqube (https://blog.setapp.pl/sonarqube_introduction)
 - [x] add custom webpack & babel & webpack-devserver
 - [x] jest? 1-3 components. setup the configuration and add at least one test
-- [ ] jest integration with our custom webpack config https://jestjs.io/docs/tutorial-react#setup-without-create-react-app, https://redux.js.org/usage/writing-tests#setting-up
+- [x] jest integration with our custom webpack config https://jestjs.io/docs/tutorial-react#setup-without-create-react-app, https://redux.js.org/usage/writing-tests#setting-up
 - [ ] check again with syllabus description
 - [x] Add stsyles with https://ant.design
 - [x] Submit traitor form doesn't work
