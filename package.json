@@ -27,7 +27,7 @@
     "prepare": "husky install",
     "start": "BABEL_ENV=production DISABLE_ESLINT_PLUGIN=true BROWSER='google chrome' webpack serve --history-api-fallback --mode=production --node-env=production",
     "build": "BABEL_ENV=production webpack --mode=production --node-env=production",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "pretty": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -62,6 +62,7 @@
     "@types/styled-components": "^5.1.14",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
+    "babel-jest": "^27.2.4",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.3.0",
@@ -77,16 +78,18 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "husky": "^7.0.2",
+    "jest": "^27.2.4",
+    "jest-network-mock": "^1.2.3",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "react-hot-loader": "^4.13.0",
-    "style-loader": "^3.3.0",
-    "webpack": "^5.55.1",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.0",
     "react-test-renderer": "^17.0.2",
     "redux-devtools-extension": "^2.13.9",
-    "ts-node": "^10.2.1"
+    "style-loader": "^3.3.0",
+    "ts-node": "^10.2.1",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
   },
   "lint-staged": {
     "**/*": [
@@ -96,5 +99,9 @@
       "yarn lint --fix"
     ]
   },
-  "main": "./src/index.jsx"
+  "main": "./src/index.jsx",
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "jsdom"
+  }
 }

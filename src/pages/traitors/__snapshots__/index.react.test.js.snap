@@ -69,7 +69,7 @@ exports[`TraitorsScreen snapshot 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           placeholder="First Name"
-          value="me"
+          value=""
         />
         <input
           className="sc-iBPTik jxFLwP"
@@ -78,7 +78,7 @@ exports[`TraitorsScreen snapshot 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           placeholder="Last Name"
-          value="123"
+          value=""
         />
       </div>
       <div
