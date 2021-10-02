@@ -28,7 +28,6 @@ function transformFromApiToTableFormat(apiData: CountryAPIDataType): TableDataTy
 
   type PerDayEntryType = [string, number];
 
-  // FIXME: shit, refactor transformers
   const casesTransformer = ([key, value]: PerDayEntryType) => {
     perDay[key] = {
       ...(perDay[key] || {}),
